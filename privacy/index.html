@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy – Focal</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<a href="../">Focal</a>
+<article>
+<header>
+<h1>Privacy Policy</h1>
+<p class="effective">Effective September 10, 2026</p>
+</header>
+<p>
+Focal is a personal planning application. This policy explains the information
+Focal stores and how its optional Google Calendar connection works.
+</p>
+
+<section>
+<h2>Information Focal stores</h2>
+<p>
+Focal stores the account identity needed to sign you in, including your email
+address, display name when provided, and authentication identity. It also stores
+the planning information you enter, including tasks, projects, milestones, time
+blocks, notes, rituals, and account or planning settings.
+</p>
+<p>
+This information is used to authenticate you and provide your private Focal
+workspace and its planning features.
+</p>
+</section>
+
+<section>
+<h2>Google Calendar</h2>
+<p>
+Connecting Google Calendar is optional. Focal requests read-only access limited
+to events on calendars you own. When Focal displays those events, it fetches them
+from Google on demand. Focal never writes changes back to Google Calendar, and
+Google event data is never persisted in Focal's database.
+</p>
+<p>
+The Google refresh token used for the connection is held as a secret in Supabase
+Vault. It is not stored in Focal's browser storage or in a plaintext database
+column.
+</p>
+<p>
+Disconnecting Google Calendar deletes Focal's stored credential and connection
+record locally. Focal then directs you to Google's third-party access page, where
+you can complete removal of Focal's access on Google's side. Focal does not revoke
+the Google grant automatically because the same Google authorization may also be
+used for sign-in.
+</p>
+</section>
+
+<section>
+<h2>Contact</h2>
+<p>
+For questions about this policy or Focal's handling of your information, email
+<a href="mailto:alan_chan90@yahoo.com">alan_chan90@yahoo.com</a>.
+</p>
+</section>
+</article>
+<nav aria-label="Legal pages">
+<a href="../privacy/">Privacy Policy</a>
+<a href="../terms/">Terms of Service</a>
+</nav>
+</main>
+</body>
+</html>
